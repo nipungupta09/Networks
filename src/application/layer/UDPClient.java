@@ -6,7 +6,7 @@ import java.net.InetAddress;
 
 public class UDPClient {
 	
-	public static final String IP_ADDRESS = "localhost";
+	public static final String IP_ADDRESS = "192.168.0.106";
 	public static final int PORT = 9876;
 	public static final String DATA = "This is data from client.";
 
