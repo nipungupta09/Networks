@@ -1,5 +1,8 @@
 package project.networks.util;
 
+import java.net.InetAddress;
+import java.net.UnknownHostException;
+
 /**
  * @author Nipun Gupta
  * @since 19-Aug-2015
@@ -28,8 +31,15 @@ public class TCB {
 	int RTT;
 	int cwnd;
 	
-	public TCB() {
-		
+	public TCB() throws UnknownHostException {
+		this.localIP = InetAddress.getLocalHost().getHostAddress();
+		this.currentState = ConnectionState.CLOSED;
+	}
+	
+	public TCB(int localPort) throws UnknownHostException {
+		this.localIP = InetAddress.getLocalHost().getHostAddress();
+		this.localPort = localPort;
+		this.currentState = ConnectionState.LISTEN;
 	}
 	
 	public String getLocalIP() {
