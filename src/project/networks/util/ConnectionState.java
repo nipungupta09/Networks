@@ -1,6 +1,7 @@
 package project.networks.util;
 
 public enum ConnectionState {
+	
 	LISTEN,
 	SYN_SENT,
 	SYN_RECEIVED,
@@ -12,4 +13,5 @@ public enum ConnectionState {
 	LAST_ACK,
 	TIME_WAIT,
 	CLOSED
+
 }
