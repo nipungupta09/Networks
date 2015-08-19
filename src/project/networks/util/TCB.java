@@ -28,6 +28,9 @@ public class TCB {
 	int RTT;
 	int cwnd;
 	
+	public TCB() {
+		
+	}
 	
 	public String getLocalIP() {
 		return localIP;
