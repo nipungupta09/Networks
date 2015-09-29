@@ -9,6 +9,9 @@ private:
 
 public:
 	TCPOptions(int*);
+
+	int* getOptions();
+	void setOptions(int*);
 };
 
 #endif /* TCPOPTIONS_H */
